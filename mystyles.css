@@ -1,0 +1,184 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset some basic elements */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Overlay for background effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #fff; /* Contrasts better with dark background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft text shadow */
+}
+
+/* Models container styles */
+.models {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.model {
+    text-align: center;
+    width: calc(20% - 20px);
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.model:hover {
+    transform: translateY(-10px);
+}
+
+.model img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.model h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #3b5998;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.login-link:hover {
+    background-color: #2a4887;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .model {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .model {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .models {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  /* For Firefox */
+  /* scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1; */
+  
+  /* For Internet Explorer and Edge */
+  body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }

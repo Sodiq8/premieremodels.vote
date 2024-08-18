@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Voting Page</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <h1>Vote for Your Favorite Model</h1>
+        </header>
+        <main>
+            <a href="facebook-login.html" class="login-link">Login with Facebook to Vote</a>
+            <div class="models">
+                <div class="model">
+                    <img src="model1.jpg" alt="Model 1">
+                    <h2>ANNA</h2>
+                    <form action="vote.php" method="post">
+                        <input type="hidden" name="model" value="1">
+                        <button type="submit">Vote</button>
+                    </form>
+                </div>
+                <div class="model">
+                    <img src="model2.jpg" alt="Model 2">
+                    <h2>BARBORA</h2>
+                    <form action="vote.php" method="post">
+                        <input type="hidden" name="model" value="2">
+                        <button type="submit">Vote</button>
+                    </form>
+                </div>
+                <div class="model">
+                    <img src="model3.jpg" alt="Model 3">
+                    <h2>CELINE</h2>
+                    <form action="vote.php" method="post">
+                        <input type="hidden" name="model" value="3">
+                        <button type="submit">Vote</button>
+                    </form>
+                </div>
+                <div class="model">
+                    <img src="model4.jpg" alt="Model 4">
+                    <h2>DAISY</h2>
+                    <form action="vote.php" method="post">
+                        <input type="hidden" name="model" value="4">
+                        <button type="submit">Vote</button>
+                    </form>
+                </div>
+                <div class="model">
+                    <img src="model5.jpg" alt="Model 5">
+                    <h2>GRACE</h2>
+                    <form action="vote.php" method="post">
+                        <input type="hidden" name="model" value="5">
+                        <button type="submit">Vote</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
